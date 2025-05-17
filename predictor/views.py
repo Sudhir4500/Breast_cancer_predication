@@ -8,8 +8,7 @@ import os
 from pathlib import Path
 
 # Paths to saved models
-BASE_PATH = Path('dataset/CBIS-DDSM')
-MODEL_PATH = BASE_PATH / 'models'
+MODEL_PATH = Path('models')  # Models saved outside dataset/, at project level
 CNN_MODEL_PATH = MODEL_PATH / 'model.h5'
 RF_MODEL_PATH = MODEL_PATH / 'rf_model.joblib'
 SCALER_PATH = MODEL_PATH / 'scaler.joblib'
